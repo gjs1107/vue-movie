@@ -1,0 +1,48 @@
+.btn{
+  display: inline-block;
+  font-size: $font-size-normal;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+.btn-big{
+  display: inline-block;
+  font-size: $font-size-normal;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+.btn-buy{
+  background: $color-green;
+}
+.icon-desc{
+  display: inline-block;
+  padding: 0 4px;
+  background: $color-orange;
+  color: #ffffff;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.cineme-mark{
+  font-size: $font-size-sm;
+  color: $color-light-gray;
+  display: inline-block;
+  border: 1px solid $color-light-gray;
+  line-height: 14px;
+  padding: 0 4px;
+  border-radius: 1px;
+}
+.card-member{
+  display: inline-block;
+  font-size: $font-size-sm;
+  color: #ffffff;
+  background: $color-light-purple;
+  padding: 0 3px;
+}
+.card-discount{
+  display: inline-block;
+  font-size: $font-size-sm;
+  color: #ffffff;
+  background: $color-yellow;
+  padding: 0 3px;
+}

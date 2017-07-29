@@ -1,0 +1,57 @@
+
+/*---------mixin-----------*/
+
+
+/*===================
+*  border
+===================*/
+
+@mixin border-bottom ($Size:1px, $color:#c9c9c9) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: $Size;
+  border-top: 1px solid $color;
+  color: rgba(255, 255, 255, .9);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+@mixin border-right ($Size:1px, $color:#c9c9c9) {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: $Size;
+  border-right: 1px solid $color;
+  color: rgba(255, 255, 255, .9);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+
+/*===================
+*  text-overflow
+===================*/
+
+@mixin text-overflow-one {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin text-overflow-more ($rows) {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $rows;
+  -webkit-box-orient: vertical;
+}

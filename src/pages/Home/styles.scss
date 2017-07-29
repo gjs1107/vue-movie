@@ -1,0 +1,35 @@
+@import "static/styles/scss/variable.scss";
+@import "static/styles/scss//mixins.scss";
+
+.fixed-header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 100;
+}
+.fixed-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+}
+.item-wrap{
+  display: flex;
+  background: #ffffff;
+  .item{
+    flex: 1;
+    font: bold 16px/50px 'Microsoft Yahei';
+    color: #666666;
+    text-align: center;
+    &.router-link-active{
+      color: $color-green;
+    }
+  }
+}
+.page-container{
+  padding: 50px 0;
+}

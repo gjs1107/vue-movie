@@ -1,12 +1,25 @@
 <template>
-  <div class="search-wrap">
+  <div class="search-page">
+    <div class="search-wrap">
       <i class="iconfont icon-sousuo"></i>
       <input type="text">
     </div>
+
+    <div class="search-result">
+      <MovieList></MovieList>
+    </div>
+  </div>
+  
 </template>
 
 <script type="text/javascript">
-  export default{}
+import MovieList from 'components/MovieList'
+
+export default{
+  components: {
+    MovieList
+  }
+}
 </script>
 <style lang="scss" scoped>
 @import "static/styles/scss/app.scss";

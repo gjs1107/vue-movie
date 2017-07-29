@@ -17,6 +17,8 @@ const Order = r => require.ensure([], () => r(require('../pages/User/children/Or
 const OrderList = r => require.ensure([], () => r(require('../pages/User/children/Order/OrderList')), 'OrderList')
 const OrderDetail = r => require.ensure([], () => r(require('../pages/User/children/Order/OrderDetail')), 'OrderDetail')
 const News = r => require.ensure([], () => r(require('../pages/User/children/News/News')), 'News')
+const search = r => require.ensure([], () => r(require('components/search')), 'search')
+const city = r => require.ensure([], () => r(require('components/city')), 'city')
 
 Vue.use(Router)
 
@@ -123,6 +125,14 @@ export default new Router({
       path: '/user/news', // 用户-消息
       // name: 'News',
       component: News
+    },
+    {
+      path: '/search', // 搜索
+      component: search
+    },
+    {
+      path: '/city', // 城市定位
+      component: city
     }
   ]
 })

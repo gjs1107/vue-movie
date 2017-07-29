@@ -1,13 +1,17 @@
 <template>
   <div class="search-location-wrap">
     <div class="location-wrap">
-      <span class="city">城市</span>
-      <i class="iconfont icon-triangle-copy-copy-copy"></i>
+      <router-link to="/city">
+        <span class="city">城市</span>
+        <i class="iconfont icon-triangle-copy-copy-copy"></i>
+      </router-link>
     </div>
     
     <div class="search-wrap">
-      <i class="iconfont icon-sousuo"></i>
-      <button type="button">搜索...</button>
+      <router-link to="/search">
+        <i class="iconfont icon-sousuo"></i>
+        <button type="button">搜索...</button>
+      </router-link>
     </div>
   </div>
 </template>
